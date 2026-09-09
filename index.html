@@ -4,38 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Ravi Singh | Software Developer</title>
-
     <meta name="description"
-          content="Ravi Singh - BSc Computer Science student at University of Delhi, aspiring Software Developer and technology enthusiast.">
+        content="Ravi Singh - BSc Computer Science student, aspiring Software Developer and technology enthusiast from Delhi.">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Ravi Singh CS | Software Developer</title>
 
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= HEADER ================= -->
 
 <header class="header">
 
     <nav class="navbar">
 
-        <a href="#home" class="logo">
-            Ravi<span>.</span>
+        <a href="#home" class="brand">
+
+            <img src="ravi-singh-cs-logo.png"
+                 alt="Ravi Singh CS Logo">
+
+            <div>
+                <strong>Ravi Singh</strong>
+                <span>CS</span>
+            </div>
+
         </a>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
         <ul class="nav-links" id="navLinks">
 
-            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#work">Work</a></li>
@@ -45,79 +59,83 @@
 
         </ul>
 
-        <div class="nav-actions">
-
-            <button id="themeToggle" class="theme-btn">
-                <i class="fa-solid fa-moon"></i>
-            </button>
-
-            <button class="menu-btn" id="menuBtn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-        </div>
+        <button class="theme-btn" id="themeBtn">
+            <i class="fa-solid fa-moon"></i>
+        </button>
 
     </nav>
 
 </header>
 
 
-<!-- ================= HOME ================= -->
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-    <div class="hero-content">
+    <div class="hero-container">
 
-        <div class="hero-text">
+        <div class="hero-content">
 
-            <p class="small-heading">
-                <span></span> Hello, I'm
-            </p>
+            <div class="small-title">
+                <span></span>
+                HELLO, I'M
+            </div>
 
             <h1>
-                Ravi <span>Singh</span>
+                Ravi
+                <strong>Singh</strong>
             </h1>
 
             <h2>
-                <span id="typingText"></span>
+                <span id="typing"></span>
+                <span class="cursor">|</span>
             </h2>
 
-            <p class="hero-description">
+            <p>
                 I'm a BSc Computer Science student at the University of Delhi,
-                passionate about technology, coding, software development,
-                web development and Artificial Intelligence.
+                passionate about coding, software development, web technologies
+                and Artificial Intelligence.
             </p>
 
             <div class="hero-buttons">
 
-                <a href="#about" class="btn primary-btn">
+                <a href="#about" class="btn primary">
                     Explore My Profile
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
+                <a href="#contact" class="btn secondary">
+                    Let's Connect
                 </a>
 
             </div>
 
 
+            <!-- SOCIAL LINKS -->
+
             <div class="social-links">
 
-                <a href="#" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                <a href="https://www.instagram.com/its_ravi_thakur_/"
+                   target="_blank"
+                   aria-label="Instagram">
 
-                <a href="#" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-                <a href="#" aria-label="Instagram">
                     <i class="fa-brands fa-instagram"></i>
+
                 </a>
 
-                <a href="#" aria-label="Email">
+                <a href="https://www.linkedin.com/in/digicode?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                   target="_blank"
+                   aria-label="LinkedIn">
+
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </a>
+
+                <a href="mailto:ravi.thakur.in1@gmail.com"
+                   aria-label="Email">
+
                     <i class="fa-solid fa-envelope"></i>
+
                 </a>
 
             </div>
@@ -125,32 +143,41 @@
         </div>
 
 
-        <div class="hero-image">
+        <!-- PROFILE PHOTO -->
 
-            <div class="image-circle">
+        <div class="hero-photo">
 
-                <!-- Apni photo ka naam profile.jpg rakho -->
+            <div class="photo-circle">
+
+                <div class="circle-border"></div>
+
                 <img src="Profile.jpg"
-                     alt="Ravi Singh"
-                     onerror="this.style.display='none';">
-
-                <div class="image-circle">
-
-    <img src="Profile.jpg"
-         alt="Ravi Singh">
-
-</div>
+                     alt="Ravi Singh">
 
             </div>
+
 
             <div class="floating-card card-one">
+
                 <i class="fa-solid fa-code"></i>
-                <span>Developer</span>
+
+                <div>
+                    <strong>Developer</strong>
+                    <small>Building & Learning</small>
+                </div>
+
             </div>
 
+
             <div class="floating-card card-two">
-                <i class="fa-solid fa-laptop-code"></i>
-                <span>Tech Enthusiast</span>
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <div>
+                    <strong>DU Student</strong>
+                    <small>BSc Computer Science</small>
+                </div>
+
             </div>
 
         </div>
@@ -158,6 +185,7 @@
     </div>
 
 </section>
+
 
 
 <!-- ================= ABOUT ================= -->
@@ -166,28 +194,30 @@
 
     <div class="section-heading">
 
-        <p>GET TO KNOW ME</p>
+        <span>GET TO KNOW ME</span>
 
-        <h2>About <span>Me</span></h2>
+        <h2>
+            About <strong>Me</strong>
+        </h2>
 
-        <div class="heading-line"></div>
+        <i></i>
 
     </div>
 
 
     <div class="about-container">
 
-        <div class="about-image">
+        <div class="about-card">
 
-            <div class="about-box">
-
-                <i class="fa-solid fa-user-tie"></i>
-
-                <h3>Ravi Singh</h3>
-
-                <p>Computer Science Student</p>
-
+            <div class="about-icon">
+                <i class="fa-solid fa-laptop-code"></i>
             </div>
+
+            <h3>Technology Enthusiast</h3>
+
+            <p>
+                Learning • Building • Improving
+            </p>
 
         </div>
 
@@ -195,47 +225,80 @@
         <div class="about-content">
 
             <h3>
-                Passionate about <span>Technology & Innovation</span>
+                Passionate about
+                <strong>Technology & Innovation</strong>
             </h3>
 
             <p>
-                Hello! I'm Ravi Singh from Delhi. I am currently pursuing
+                Hello! I'm Ravi Singh from Delhi. I'm currently pursuing
                 BSc Computer Science from the University of Delhi.
             </p>
 
             <p>
-                I have a strong interest in software development, web
-                development, Artificial Intelligence, SEO and digital
-                technologies. I enjoy learning new technologies and
-                turning ideas into useful digital solutions.
+                I enjoy learning new technologies and working on practical
+                digital solutions across web development, software development,
+                AI and modern digital technologies.
             </p>
 
             <p>
                 Along with my studies, I also work in the IT and digital
-                services field through DigiCode IT Solution.
+                services field through <strong>DigiCode IT Solution</strong>.
             </p>
 
 
-            <div class="about-info">
+            <div class="info-grid">
 
                 <div>
-                    <strong>Name:</strong>
-                    <span>Ravi Singh</span>
+                    <small>Name</small>
+                    <strong>Ravi Singh</strong>
                 </div>
 
                 <div>
-                    <strong>Location:</strong>
-                    <span>Delhi, India</span>
+                    <small>Education</small>
+                    <strong>BSc Computer Science</strong>
                 </div>
 
                 <div>
-                    <strong>Education:</strong>
-                    <span>BSc Computer Science</span>
+                    <small>University</small>
+                    <strong>University of Delhi</strong>
                 </div>
 
                 <div>
-                    <strong>University:</strong>
-                    <span>University of Delhi</span>
+                    <small>Delhi Address</small>
+                    <strong>Delhi 110095</strong>
+                </div>
+
+            </div>
+
+
+            <!-- FAMILY DETAILS -->
+
+            <div class="family-box">
+
+                <div>
+                    <small>Father</small>
+                    <strong>
+                        Shri Thakur Dinesh Singh
+                    </strong>
+                </div>
+
+                <div>
+                    <small>Grandfather</small>
+                    <strong>
+                        Shri Thakur Narendra Singh
+                    </strong>
+                </div>
+
+                <div class="full">
+
+                    <small>Permanent Address</small>
+
+                    <strong>
+                        Village Garhi, Post Khajuri,
+                        Jalalabad, District Shahjahanpur,
+                        Uttar Pradesh - 242127
+                    </strong>
+
                 </div>
 
             </div>
@@ -247,17 +310,20 @@
 </section>
 
 
+
 <!-- ================= EDUCATION ================= -->
 
-<section class="section alternate" id="education">
+<section class="section light-section" id="education">
 
     <div class="section-heading">
 
-        <p>MY ACADEMIC JOURNEY</p>
+        <span>MY ACADEMIC JOURNEY</span>
 
-        <h2>My <span>Education</span></h2>
+        <h2>
+            My <strong>Education</strong>
+        </h2>
 
-        <div class="heading-line"></div>
+        <i></i>
 
     </div>
 
@@ -270,20 +336,18 @@
                 <i class="fa-solid fa-graduation-cap"></i>
             </div>
 
-            <div class="timeline-content">
+            <div class="timeline-card">
 
-                <span class="timeline-date">
-                    2025 - Present
-                </span>
+                <small>2025 — PRESENT</small>
 
                 <h3>BSc Computer Science</h3>
 
                 <h4>University of Delhi</h4>
 
                 <p>
-                    Currently pursuing BSc Computer Science and developing
-                    strong foundations in programming, computer science,
-                    mathematics and technology.
+                    Currently pursuing BSc Computer Science with a focus on
+                    programming, computer science fundamentals, mathematics
+                    and modern technology.
                 </p>
 
             </div>
@@ -297,19 +361,17 @@
                 <i class="fa-solid fa-school"></i>
             </div>
 
-            <div class="timeline-content">
+            <div class="timeline-card">
 
-                <span class="timeline-date">
-                    Completed
-                </span>
+                <small>COMPLETED</small>
 
                 <h3>Senior Secondary Education</h3>
 
                 <h4>Class XII</h4>
 
                 <p>
-                    Completed senior secondary education before starting
-                    my journey in Computer Science and technology.
+                    Completed senior secondary education before continuing
+                    my academic journey into Computer Science and technology.
                 </p>
 
             </div>
@@ -319,6 +381,7 @@
     </div>
 
 </section>
+
 
 
 <!-- ================= WORK ================= -->
@@ -327,102 +390,97 @@
 
     <div class="section-heading">
 
-        <p>WHAT I DO</p>
+        <span>PROFESSIONAL WORK</span>
 
-        <h2>My <span>Work</span></h2>
+        <h2>
+            What I <strong>Do</strong>
+        </h2>
 
-        <div class="heading-line"></div>
+        <i></i>
 
     </div>
 
 
-    <div class="work-container">
+    <div class="company-header">
 
-        <div class="work-content">
+        <div class="company-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+        </div>
 
-            <div class="work-logo">
-                <i class="fa-solid fa-laptop-code"></i>
-            </div>
+        <div>
 
-            <div>
+            <small>IT & DIGITAL SERVICES</small>
 
-                <span class="work-label">
-                    IT & DIGITAL SERVICES
-                </span>
+            <h3>DigiCode IT Solution</h3>
 
-                <h3>DigiCode IT Solution</h3>
+            <p>
+                Your Complete Web, Apps & SEO Partner
+            </p>
 
-                <p class="work-role">
-                    Web • Apps • Software • SEO • Digital Solutions
-                </p>
+        </div>
 
-            </div>
+    </div>
+
+
+    <p class="work-description">
+
+        I work in the IT and digital services field through
+        DigiCode IT Solution, helping businesses and organizations
+        build a stronger digital presence.
+
+    </p>
+
+
+    <div class="service-grid">
+
+        <div class="service-card">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <h4>Website Development</h4>
+
+            <p>
+                Business, e-commerce and custom websites.
+            </p>
 
         </div>
 
 
-        <p class="work-description">
+        <div class="service-card">
 
-            Along with my academic journey, I work in the IT and digital
-            services field through DigiCode IT Solution. We focus on
-            creating modern digital solutions for businesses and
-            organizations.
+            <i class="fa-solid fa-mobile-screen"></i>
 
-        </p>
+            <h4>Mobile App Development</h4>
 
+            <p>
+                Modern Android and iOS application solutions.
+            </p>
 
-        <div class="services-grid">
-
-            <div class="service-card">
-
-                <i class="fa-solid fa-globe"></i>
-
-                <h4>Website Development</h4>
-
-                <p>
-                    Business, e-commerce and custom websites.
-                </p>
-
-            </div>
+        </div>
 
 
-            <div class="service-card">
+        <div class="service-card">
 
-                <i class="fa-solid fa-mobile-screen"></i>
+            <i class="fa-solid fa-code"></i>
 
-                <h4>App Development</h4>
+            <h4>Software Development</h4>
 
-                <p>
-                    Modern Android and iOS application solutions.
-                </p>
+            <p>
+                Custom software solutions for real requirements.
+            </p>
 
-            </div>
-
-
-            <div class="service-card">
-
-                <i class="fa-solid fa-code"></i>
-
-                <h4>Software Development</h4>
-
-                <p>
-                    Custom software solutions for different requirements.
-                </p>
-
-            </div>
+        </div>
 
 
-            <div class="service-card">
+        <div class="service-card">
 
-                <i class="fa-solid fa-chart-line"></i>
+            <i class="fa-solid fa-chart-line"></i>
 
-                <h4>SEO & Digital Marketing</h4>
+            <h4>SEO & Digital Marketing</h4>
 
-                <p>
-                    SEO, social media marketing and digital growth.
-                </p>
-
-            </div>
+            <p>
+                SEO, social media marketing and online growth.
+            </p>
 
         </div>
 
@@ -431,39 +489,44 @@
 </section>
 
 
+
 <!-- ================= SKILLS ================= -->
 
-<section class="section alternate" id="skills">
+<section class="section light-section" id="skills">
 
     <div class="section-heading">
 
-        <p>MY EXPERTISE</p>
+        <span>MY EXPERTISE</span>
 
-        <h2>My <span>Skills</span></h2>
+        <h2>
+            My <strong>Skills</strong>
+        </h2>
 
-        <div class="heading-line"></div>
+        <i></i>
 
     </div>
 
 
     <div class="skills-container">
 
-        <div class="skills-category">
+
+        <div class="skills-box">
 
             <h3>
                 <i class="fa-solid fa-code"></i>
                 Development
             </h3>
 
+
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>HTML & CSS</span>
-                    <span>90%</span>
+                    <b>90%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:90%"></div>
+                    <i style="width:90%"></i>
                 </div>
 
             </div>
@@ -471,13 +534,13 @@
 
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>JavaScript</span>
-                    <span>80%</span>
+                    <b>80%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:80%"></div>
+                    <i style="width:80%"></i>
                 </div>
 
             </div>
@@ -485,13 +548,13 @@
 
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>Web Development</span>
-                    <span>90%</span>
+                    <b>90%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:90%"></div>
+                    <i style="width:90%"></i>
                 </div>
 
             </div>
@@ -499,13 +562,13 @@
 
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>Software Development</span>
-                    <span>75%</span>
+                    <b>75%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:75%"></div>
+                    <i style="width:75%"></i>
                 </div>
 
             </div>
@@ -513,22 +576,24 @@
         </div>
 
 
-        <div class="skills-category">
+
+        <div class="skills-box">
 
             <h3>
                 <i class="fa-solid fa-rocket"></i>
-                Other Skills
+                Technology & Digital
             </h3>
 
+
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>Artificial Intelligence</span>
-                    <span>75%</span>
+                    <b>75%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:75%"></div>
+                    <i style="width:75%"></i>
                 </div>
 
             </div>
@@ -536,13 +601,13 @@
 
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>SEO</span>
-                    <span>80%</span>
+                    <b>80%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:80%"></div>
+                    <i style="width:80%"></i>
                 </div>
 
             </div>
@@ -550,13 +615,13 @@
 
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>Digital Marketing</span>
-                    <span>75%</span>
+                    <b>75%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:75%"></div>
+                    <i style="width:75%"></i>
                 </div>
 
             </div>
@@ -564,13 +629,13 @@
 
             <div class="skill">
 
-                <div class="skill-info">
+                <div>
                     <span>Graphic Designing</span>
-                    <span>70%</span>
+                    <b>70%</b>
                 </div>
 
                 <div class="progress">
-                    <div style="width:70%"></div>
+                    <i style="width:70%"></i>
                 </div>
 
             </div>
@@ -580,6 +645,7 @@
     </div>
 
 </section>
+
 
 
 <!-- ================= PROJECTS ================= -->
@@ -588,11 +654,13 @@
 
     <div class="section-heading">
 
-        <p>MY WORK</p>
+        <span>SELECTED WORK</span>
 
-        <h2>Featured <span>Projects</span></h2>
+        <h2>
+            Featured <strong>Projects</strong>
+        </h2>
 
-        <div class="heading-line"></div>
+        <i></i>
 
     </div>
 
@@ -607,18 +675,18 @@
 
             <div class="project-content">
 
-                <span>WEB DEVELOPMENT</span>
+                <small>WEB DEVELOPMENT</small>
 
                 <h3>Business Website</h3>
 
                 <p>
-                    A modern responsive business website designed to
-                    provide a professional online presence.
+                    Professional responsive website focused on
+                    creating a strong digital presence.
                 </p>
 
-                <a href="#" class="project-link">
-                    View Project
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="#contact">
+                    Discuss a project
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
             </div>
@@ -634,18 +702,18 @@
 
             <div class="project-content">
 
-                <span>APP DEVELOPMENT</span>
+                <small>APP DEVELOPMENT</small>
 
                 <h3>Mobile Application</h3>
 
                 <p>
-                    Mobile application concept focused on providing
-                    a simple and user-friendly digital experience.
+                    Mobile application concept focused on
+                    simple and user-friendly experiences.
                 </p>
 
-                <a href="#" class="project-link">
-                    View Project
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="#contact">
+                    Discuss a project
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
             </div>
@@ -661,18 +729,18 @@
 
             <div class="project-content">
 
-                <span>SEO & MARKETING</span>
+                <small>SEO & MARKETING</small>
 
                 <h3>Digital Growth</h3>
 
                 <p>
-                    Digital presence and SEO strategy focused on
-                    improving online visibility and growth.
+                    Digital presence and SEO strategy focused
+                    on improving online visibility.
                 </p>
 
-                <a href="#" class="project-link">
-                    View Project
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <a href="#contact">
+                    Discuss a project
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
 
             </div>
@@ -684,24 +752,24 @@
 </section>
 
 
-<!-- ================= GOAL ================= -->
 
-<section class="goal-section">
+<!-- ================= CAREER GOAL ================= -->
 
-    <div class="goal-content">
+<section class="career-goal">
+
+    <div>
 
         <i class="fa-solid fa-bullseye"></i>
 
         <h2>My Career Goal</h2>
 
         <p>
-            My goal is to become a skilled Software Developer,
-            continuously learn emerging technologies and build
-            innovative digital products that can solve real-world
-            problems.
+            To become a skilled Software Developer, continuously
+            learn emerging technologies and build innovative digital
+            products that solve real-world problems.
         </p>
 
-        <a href="#contact" class="btn primary-btn">
+        <a href="#contact" class="btn white">
             Let's Connect
             <i class="fa-solid fa-arrow-right"></i>
         </a>
@@ -711,220 +779,175 @@
 </section>
 
 
+
 <!-- ================= CONTACT ================= -->
 
 <section class="section" id="contact">
 
     <div class="section-heading">
 
-        <p>GET IN TOUCH</p>
+        <span>GET IN TOUCH</span>
 
-        <h2>Contact <span>Me</span></h2>
+        <h2>
+            Contact <strong>Me</strong>
+        </h2>
 
-        <div class="heading-line"></div>
+        <i></i>
 
     </div>
 
 
     <div class="contact-container">
 
+
         <div class="contact-info">
 
             <h3>Let's Talk</h3>
 
             <p>
-                If you want to connect with me regarding technology,
-                development, collaboration or any project, feel free
-                to contact me.
+                Want to connect about technology, development,
+                collaboration or a project? Send me a message.
             </p>
 
 
+            <!-- PHONE 1 -->
+
             <div class="contact-item">
 
-                <div class="contact-icon">
+                <span>
                     <i class="fa-solid fa-phone"></i>
-                </div>
+                </span>
 
                 <div>
-                    <span>Phone</span>
+
+                    <small>PHONE 1</small>
+
+                    <a href="tel:+918810577665">
+                        +91 8810577665
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PHONE 2 -->
+
+            <div class="contact-item">
+
+                <span>
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+
+                <div>
+
+                    <small>PHONE 2</small>
+
                     <a href="tel:+919718993785">
                         +91 9718993785
                     </a>
+
                 </div>
 
             </div>
 
 
+            <!-- EMAIL -->
+
             <div class="contact-item">
 
-                <div class="contact-icon">
+                <span>
                     <i class="fa-solid fa-envelope"></i>
-                </div>
+                </span>
 
                 <div>
-                    <span>Email</span>
-                    <a href="mailto:your@email.com">
-                        your@email.com
+
+                    <small>EMAIL</small>
+
+                    <a href="mailto:ravi.thakur.in1@gmail.com">
+                        ravi.thakur.in1@gmail.com
                     </a>
+
                 </div>
 
             </div>
 
+
+            <!-- DELHI ADDRESS -->
 
             <div class="contact-item">
 
-                <div class="contact-icon">
+                <span>
                     <i class="fa-solid fa-location-dot"></i>
-                </div>
+                </span>
 
                 <div>
-                    <span>Location</span>
-                    <p>Delhi, India</p>
+
+                    <small>DELHI ADDRESS</small>
+
+                    <strong>
+                        Delhi 110095, India
+                    </strong>
+
                 </div>
 
             </div>
+
+
+            <!-- PERMANENT ADDRESS -->
+
+            <div class="contact-item">
+
+                <span>
+                    <i class="fa-solid fa-house"></i>
+                </span>
+
+                <div>
+
+                    <small>PERMANENT ADDRESS</small>
+
+                    <strong>
+                        Village Garhi, Post Khajuri,
+                        Jalalabad, District Shahjahanpur,
+                        Uttar Pradesh 242127
+                    </strong>
+
+                </div>
+
+            </div>
+
 
         </div>
 
+
+
+        <!-- CONTACT FORM -->
 
         <form class="contact-form" id="contactForm">
 
-            <div class="input-row">
+            <div class="two-columns">
 
-                <div class="input-group">
+                <label>
+                    Your Name
 
-                    <label>Your Name</label>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required>
 
-                    <input type="text"
-                           id="name"
-                           placeholder="Enter your name"
-                           required>
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label>Your Email</label>
-
-                    <input type="email"
-                           id="email"
-                           placeholder="Enter your email"
-                           required>
-
-                </div>
-
-            </div>
+                </label>
 
 
-            <div class="input-group">
+                <label>
+                    Your Email
 
-                <label>Subject</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required>
 
-                <input type="text"
-                       id="subject"
-                       placeholder="Enter subject"
-                       required>
+                </label>
 
             </div>
-
-
-            <div class="input-group">
-
-                <label>Message</label>
-
-                <textarea id="message"
-                          rows="6"
-                          placeholder="Write your message..."
-                          required></textarea>
-
-            </div>
-
-
-            <button type="submit" class="btn primary-btn submit-btn">
-
-                Send Message
-                <i class="fa-solid fa-paper-plane"></i>
-
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="footer-content">
-
-        <div>
-
-            <a href="#home" class="logo">
-                Ravi<span>.</span>
-            </a>
-
-            <p>
-                Building my journey in technology,
-                one line of code at a time.
-            </p>
-
-        </div>
-
-
-        <div class="footer-social">
-
-            <a href="#">
-                <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-
-            <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="copyright">
-
-        <p>
-            © <span id="year"></span> Ravi Singh. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<!-- WhatsApp Button -->
-
-<a href="https://wa.me/919718993785"
-   class="whatsapp-btn"
-   target="_blank"
-   aria-label="WhatsApp">
-
-    <i class="fa-brands fa-whatsapp"></i>
-
-</a>
-
-
-<button id="backToTop" class="back-to-top">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</button>
-
-
-<script src="script.js"></script>
-
-</body>
-</html>
